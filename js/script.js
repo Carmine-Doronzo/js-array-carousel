@@ -38,16 +38,27 @@ i = 0
 nextDomElement.addEventListener('click',function(){
 
     
+
     i++;
+    //BONUS
+    if(i > 4){
+
+        i = 0
+    }
+
     const activeDomClass = document.querySelector('.active');  
     
     activeDomClass.classList.remove('active');
 
     itemDomElements[i].classList.add('active');
-
+    
 
 
     
+
+
+
+   
 
 
 
@@ -73,16 +84,28 @@ nextDomElement.addEventListener('click',function(){
 
 prevDomElement.addEventListener('click', function(){
 
+   
+
     i--;
+    //BONUS
+    if(i < 0){
+        i = 4
+        
+
+        
+    }
 
     const activeDomClass = document.querySelector('.active');
     
-    activeDomClass.classList.remove('active');
+        activeDomClass.classList.remove('active');
+    
+        itemDomElements[i].classList.add('active');
 
-    itemDomElements[i].classList.add('active');
+
+   
 
     
-
+    
 
 
     console.log(i)
