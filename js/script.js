@@ -32,25 +32,26 @@ const nextDomElement = document.querySelector('.next');
 
 const prevDomElement = document.querySelector('.prev');
 
-const activeDomClass = document.querySelectorAll('.active');
-
 const itemDomElements = document.querySelectorAll('.item'); 
 
 i = 0
 nextDomElement.addEventListener('click',function(){
 
     
-    i++    
+    i++;
+    const activeDomClass = document.querySelector('.active');  
     
-    activeDomClass[i].classList.remove('active')
+    activeDomClass.classList.remove('active');
 
-    itemDomElements[i].classList.add('active')
+    itemDomElements[i].classList.add('active');
+
+
 
     
 
 
 
-    console.log(i)
+    console.log(i);
     
 
     
@@ -72,11 +73,13 @@ nextDomElement.addEventListener('click',function(){
 
 prevDomElement.addEventListener('click', function(){
 
-    i--    
-    
-    activeDomClass[i].classList.remove('active')
+    i--;
 
-    itemDomElements[i].classList.add('active')
+    const activeDomClass = document.querySelector('.active');
+    
+    activeDomClass.classList.remove('active');
+
+    itemDomElements[i].classList.add('active');
 
     
 
