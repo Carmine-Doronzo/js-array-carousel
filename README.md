@@ -1,0 +1,1 @@
+Qui le cose iniziano a farsi interessanti: primo carosello gestito con javascript vanilla 
